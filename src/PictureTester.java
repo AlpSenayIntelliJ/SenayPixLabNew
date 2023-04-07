@@ -52,19 +52,54 @@ public class PictureTester
 
   public static void testMirrorVerticalRightToLeft()
   {
-    Picture caterpillar = new Picture("C:\\Users\\BT_LIBRARY_04\\IdeaProjects\\SenayPixLabNew\\src\\caterpillar.jpg");
+    Picture caterpillar = new Picture("/Users/alpsenay/IdeaProjects/SenayPixLabNew/src/swan.jpg");
     caterpillar.explore();
-    caterpillar.mirrorVertical();
+    caterpillar.mirrorVerticalRightToLeft();
     caterpillar.explore();
+  }
+
+  public static void testMirrorHorizontal() {
+    Picture swan = new Picture("/Users/alpsenay/IdeaProjects/SenayPixLabNew/src/swan.jpg");
+    swan.explore();
+    swan.mirrorHorizontal();
+    swan.explore();
+  }
+
+  public static void testMirrorHorizontalBotToTop() {
+    Picture swan = new Picture("/Users/alpsenay/IdeaProjects/SenayPixLabNew/src/swan.jpg");
+    swan.explore();
+    swan.mirrorHorizontalBotToTop();
+    swan.explore();
+  }
+
+  public static void testMirrorDiagonal() {
+    Picture swan = new Picture("/Users/alpsenay/IdeaProjects/SenayPixLabNew/src/swan.jpg");
+    swan.explore();
+    swan.mirrorDiagonal();
+    swan.explore();
   }
   
   /** Method to test mirrorTemple */
   public static void testMirrorTemple()
   {
-    Picture temple = new Picture("C:\\Users\\User\\IdeaProjects\\SenayPixLabNew\\src\\temple.jpg");
+    Picture temple = new Picture("/Users/alpsenay/IdeaProjects/SenayPixLabNew/src/temple.jpg");
     temple.explore();
     temple.mirrorTemple();
     temple.explore();
+  }
+
+  public static void testMirrorArms() {
+    Picture snow = new Picture("/Users/alpsenay/IdeaProjects/SenayPixLabNew/src/snowman.jpg");
+    snow.explore();
+    snow.mirrorArms();
+    snow.explore();
+  }
+
+  public static void testMirrorGull() {
+    Picture gull = new Picture("/Users/alpsenay/IdeaProjects/SenayPixLabNew/src/seagull.jpg");
+    gull.explore();
+    gull.mirrorGull();
+    gull.explore();
   }
   
   /** Method to test the collage method */
@@ -98,10 +133,13 @@ public class PictureTester
     //testGrayScale();
     //testFixUnderwater();
     //testMirrorVertical();
-    testMirrorVerticalRightToLeft();
+    //testMirrorVerticalRightToLeft();
+    //testMirrorHorizontal();
+    //testMirrorHorizontalBotToTop();
+    //testMirrorDiagonal();
     //testMirrorTemple();
     //testMirrorArms();
-    //testMirrorGull();
+    testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
     //testCopy();
